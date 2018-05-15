@@ -1,0 +1,461 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    /* width: 100px; */
+}
+
+header {
+    background: url("banner3.jpg");
+    background-size: cover;
+    color: white;
+    height: 450px;
+    text-align: center;
+    overflow: auto;
+}
+
+header>p {
+    padding: 60px;
+    font-size: 22px;
+    margin-top: 80px;
+}
+
+header>a {
+    color: white;
+    background-color: rgb(121, 163, 241);
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav {
+    text-align: center;
+    color: aliceblue;
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav>ul {
+    background-color: rgb(99, 154, 255);
+    ;
+    padding: 20px;
+    list-style-type: none;
+}
+
+ul li {
+    font-size: 14px;
+    margin: 0;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    color: silver;
+    padding: 10px;
+}
+
+span {
+    display: inline-block;
+    color: rgb(255, 187, 0);
+    border: 2px solid grey;
+    border-right: 0;
+    padding-left: 10px;
+}
+
+main {
+    width: 100%;
+}
+
+main h2 {
+    text-align: center;
+    margin-top: 60px;
+    color: rgb(99, 154, 255);
+}
+
+hr {
+    display: block;
+    margin: 20px auto;
+    padding: 0 5px;
+    width: 27%;
+}
+
+article {
+    width: 85%;
+    margin: 0 auto;
+}
+
+article h3 {
+    color: rgb(99, 154, 255);
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+article p {
+    padding: 20px 0;
+    text-align: left;
+}
+
+article ul {
+    list-style-image: url(arrow_bullet.png);
+    list-style-position: inside;
+}
+
+article ul li {
+    text-align: left;
+    padding: 10px;
+    padding-left: 0;
+    color: grey;
+}
+
+main img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 85%;
+}
+
+.first {
+    width: 85%;
+    margin: 0 auto;
+    background-color: rgba(99, 154, 255, 0.555);
+    margin-top: 5%;
+    padding: 15px;
+    text-align: center;
+}
+
+main>h3 {
+    text-align: center;
+    margin-top: 90px;
+    font-size: 25px;
+}
+
+.first>img {
+    width: 20%;
+    border-radius: 50%;
+    float: left;
+}
+
+.first>p {
+    text-align: left;
+    padding: 10px;
+    clear: both;
+    padding: 2%;
+}
+
+.two {
+    background-color: rgb(18, 204, 111);
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5%;
+}
+
+h4 {
+    text-align: center
+}
+
+.two>img {
+    width: 20px;
+    display: inline-block;
+}
+
+.two>p {
+    display: inline;
+}
+
+.third {
+    background-color: rgb(226, 43, 150);
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5%;
+}
+
+.third>img {
+    width: 30px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.fouth {
+    background-color: rgb(19, 82, 175);
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5%;
+}
+
+.fifth {
+    background-color: rgb(82, 191, 241);
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5%;
+}
+
+.fifth>img {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+}
+
+.maps {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 5%;
+}
+
+input[type=text],
+textarea,
+select {
+    width: 100%;
+    margin: 0 auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: rgba(238, 165, 69, 0.801);
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+footer {
+    background-color: silver;
+    height: 50px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/*///////////////////////////////////////////////////////*/
+
+@media (min-width: 768px) {
+    .container {
+        position: relative;
+    }
+    nav {
+        position: absolute;
+        top: 2px;
+    }
+    nav>ul {
+        background-color: rgb(99, 154, 255);
+        padding: 10px;
+        list-style-type: none;
+        float: right;
+        background-color: transparent;
+        width: auto;
+        margin-right: 20px;
+    }
+    nav>ul>li {
+        display: inline;
+    }
+    h1 {
+        float: left;
+        padding-left: 15px;
+        text-align: left;
+    }
+    main {
+        width: 85%;
+        margin: 0 auto;
+    }
+    article{
+        width: 100%;
+    }
+    article ul {
+        list-style-image: url(arrow_bullet.png);
+        list-style-position: inside;
+    }
+    article ul li {
+        text-align: left;
+        padding: 10px;
+        padding-left: 0;
+        color: grey;
+    }
+    article:first-of-type {
+        margin-top: 10px;
+        width: 50%;
+        float: left;
+        height: auto;
+    }
+    article img {
+        display: block;
+        height: auto;
+        width: 50%;
+    }
+    .first {
+        width: 42%;
+        margin: 0 auto;
+        background-color: rgba(99, 154, 255, 0.555);
+        margin-top: 5%;
+        margin-right: 10px;
+        margin-left: 30px;
+        padding: 15px;
+        text-align: center;
+        float: left;
+        margin-bottom: 5px;
+    }
+    main>h3 {
+        text-align: center;
+        margin-top: 25px;
+        font-size: 25px;
+        clear: both;
+    }
+    .first>img {
+        width: 20%;
+        border-radius: 50%;
+        float: left;
+    }
+    .first>p {
+        text-align: left;
+        padding: 10px;
+        clear: both;
+        padding: 2%;
+    }
+    .two {
+        background-color: rgb(18, 204, 111);
+        width: 50%;
+        text-align: center;
+        padding: 5%;
+        margin-top: 10%;
+        display: inline-block;
+        height: 200px;
+    }
+    h4 {
+        text-align: center;
+    }
+    .two>img {
+        width: 20px;
+        display: inline-block;
+    }
+    .two>p {
+        display: inline;
+    }
+    .third {
+        background-color: rgb(226, 43, 150);
+        width: 50%;
+        text-align: center;
+        padding: 5%;
+        height: 200px;
+        float: right;
+        margin-top: 65px;
+        margin-bottom: 0px;
+    }
+    .third>img {
+        width: 30px;
+        display: inline-block;
+        padding: 5px;
+    }
+    .fouth {
+        background-color: rgb(19, 82, 175);
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 5%;
+        height: 160px;
+        float: left;
+    }
+    .fifth {
+        background-color: rgb(82, 191, 241);
+        width: 50%;
+        text-align: center;
+        padding: 5%;
+        display: inline-block;
+        height: 160px;
+        float: right;
+    }
+    .fifth>img {
+        width: 20%;
+        display: block;
+        margin: 0 auto;
+    }
+    .maps {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .form {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        margin-top: 5%;
+    }
+    input[type=text],
+    textarea,
+    select {
+        width: 100%;
+        margin: 0 auto;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid black;
+    }
+    input[type=submit] {
+        width: 20%;
+        background-color: rgba(238, 165, 69, 0.801);
+        color: white;
+        display: block;
+        text-align: center;
+    }
+    footer {
+        background-color: silver;
+        height: 50px;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    /*///////////////////////////////////////////////////////*/
+    @media (min-width: 1200px) {
+        .container {
+            width: 1200px;
+        }
+        main {
+            width: 85%;
+            margin: 0 auto;
+        }
+        article:first-of-type {
+            width: 30%;
+            float: left;
+        }
+        article:last-of-type {
+            width: 30%;
+            float: left;
+            margin-top: 10px;
+        }
+        main img {
+            display: inline;
+            width: 33%;
+            margin: 25px 20px 0 20px;
+            height: auto;
+            float: left;
+        }
+        header>p {
+            padding: 10px;
+            padding-top: 200px;
+            font-size: 290%;
+            font-family: "ROBOTO";
+        }
+        header>a {
+            padding: 5px;
+            margin-bottom: 100px;
+        }
+    }
+}
